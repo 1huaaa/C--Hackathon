@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Hackathon01/Hackathon01.csproj" />
   <Project Path="Hackathon02/Hackathon02.csproj" />
+  <Project Path="Hackathon03/Hackathon03.csproj" />
   <Project Path="Hackathon04/Hackathon04.csproj" />
 </Solution>
