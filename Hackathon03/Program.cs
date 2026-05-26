@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Hackathon03
 
@@ -8,7 +9,7 @@ namespace Hackathon03
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("請輸入一個有意義的英文敘述字串：");
+            Console.WriteLine("請輸入英文敘述字串：");
             string input = Console.ReadLine();
 
             if (string.IsNullOrWhiteSpace(input))
@@ -17,20 +18,21 @@ namespace Hackathon03
                 return;
             }
 
-            char[] delimiters = { ' ', ',', '.', '!', '?', ';', ':', '"', '\'' };
-            string[] words = input.ToLower().Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+            // 只保留字母，其他全部變空格
+            string cleanInput = new string(
+                input.ToLower()
+                     .Select(c => char.IsLetter(c) ? c : ' ')
+                     .ToArray()
+            );
 
-            var wordCounts = new Dictionary<string, int>();
+            // 用空格切開，過濾空項目
+            string[] words = cleanInput.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
-            foreach (string word in words)
-            {
-                wordCounts[word] = wordCounts.GetValueOrDefault(word) + 1;
-            }
 
             Console.WriteLine("\n計算結果：");
-            foreach (var kvp in wordCounts)
+            foreach (var group in words.GroupBy(w => w))
             {
-                Console.WriteLine($" {kvp.Key} : {kvp.Value}");
+                Console.WriteLine($" {group.Key} : {group.Count()}");
             }
         }
     }
