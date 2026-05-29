@@ -3,4 +3,6 @@
   <Project Path="Hackathon02/Hackathon02.csproj" />
   <Project Path="Hackathon03/Hackathon03.csproj" />
   <Project Path="Hackathon04/Hackathon04.csproj" />
+  <Project Path="Hackathon05/Hackathon05.csproj" />
+  <Project Path="Hackathon06/Hackathon06.csproj" />
 </Solution>

@@ -41,6 +41,7 @@
                 previous = bracket.UpperLimit;
             }
 
+
             Console.WriteLine($"年收入：{income}");
             Console.WriteLine($"應繳稅額：{tax:N2}");
         }
