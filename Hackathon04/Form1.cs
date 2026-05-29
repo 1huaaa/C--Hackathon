@@ -44,6 +44,7 @@ namespace Hackathon04
                 return;
             }
 
+            //去掉重複的 如果數量不等於4代表有重複
             if (guess.Distinct().Count() != 4)
             {
                 MessageBox.Show("數字不能重複!");
@@ -61,6 +62,7 @@ namespace Hackathon04
                 {
                     countA++;
                 }
+                //在陣列中尋找 找到回傳0~3 沒找到回傳-1 ;  != -1 =>有找到
                 else if (Array.IndexOf(answer, guessNum) != -1)
                     countB++;
             }

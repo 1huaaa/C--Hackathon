@@ -78,7 +78,7 @@
             // lblInput
             // 
             lblInput.AutoSize = true;
-            lblInput.Location = new Point(101, 287);
+            lblInput.Location = new Point(101, 240);
             lblInput.Name = "lblInput";
             lblInput.Size = new Size(46, 23);
             lblInput.TabIndex = 4;
@@ -86,14 +86,14 @@
             // 
             // txtInput
             // 
-            txtInput.Location = new Point(101, 313);
+            txtInput.Location = new Point(101, 266);
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(150, 30);
             txtInput.TabIndex = 5;
             // 
             // btnCheck
             // 
-            btnCheck.Location = new Point(101, 358);
+            btnCheck.Location = new Point(101, 311);
             btnCheck.Name = "btnCheck";
             btnCheck.Size = new Size(112, 34);
             btnCheck.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // btnReset
             // 
-            btnReset.Location = new Point(231, 358);
+            btnReset.Location = new Point(231, 311);
             btnReset.Name = "btnReset";
             btnReset.Size = new Size(112, 37);
             btnReset.TabIndex = 7;
