@@ -6,7 +6,7 @@ namespace Hackathon05
         {
             InitializeComponent();
         }
-
+        
         private void btnAnalyze_Click(object sender, EventArgs e)
         {
             // 取得生日，轉成整數
